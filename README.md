@@ -74,6 +74,8 @@ EPOE comes with hook "EPOE". This hook is called every time a message is relayed
 
 The hook is used by the UI and the console printing to tap into the epoe stream. You can do the same and for example create logging module for epoe.
 
+There are also hooks for adding custom link detection/handling patterns. See [here](https://github.com/wyozi/g-ace/blob/6e9a099e0fc7cf863449024a9e8f6178bc2af6e3/lua/gace-ext/cl/ext_epoe.lua) for an example.
+
 EPOE supports explicit clientside printing of data too, so you can use it on clientside too, just prefix your prints with epoe.Print for example. epoe.Msg,MsgC,Err,AddText are also supported.
 Example:
 ```epoe.AddText(Color(255,0,255),"Wow clientside spam\n")```
